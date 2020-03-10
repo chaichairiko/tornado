@@ -144,30 +144,12 @@ if setuptools is not None:
 setup(
     name="tornado",
     version=version,
-    packages=["tornado", "tornado.test", "tornado.platform"],
+    packages=["tornado", "tornado.platform"],
     package_data={
         # data files need to be listed both here (which determines what gets
         # installed) and in MANIFEST.in (which determines what gets included
         # in the sdist tarball)
         "tornado": ["py.typed"],
-        "tornado.test": [
-            "README",
-            "csv_translations/fr_FR.csv",
-            "gettext_translations/fr_FR/LC_MESSAGES/tornado_test.mo",
-            "gettext_translations/fr_FR/LC_MESSAGES/tornado_test.po",
-            "options_test.cfg",
-            "options_test_types.cfg",
-            "options_test_types_str.cfg",
-            "static/robots.txt",
-            "static/sample.xml",
-            "static/sample.xml.gz",
-            "static/sample.xml.bz2",
-            "static/dir/index.html",
-            "static_foo.txt",
-            "templates/utf8.html",
-            "test.crt",
-            "test.key",
-        ],
     },
     author="Facebook",
     author_email="python-tornado@googlegroups.com",
